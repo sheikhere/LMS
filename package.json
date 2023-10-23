@@ -1,11 +1,19 @@
 {
-  "name": "lms",
+  "name": "lms_byrehman",
   "type": "module",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "directory": "https://github.com/sheikhere/LMS"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/app.js"
+  },
+  "bin": {
+    "lms-byrehman": "bin/app.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +23,7 @@
   },
   "dependencies": {
     "@types/readline-sync": "^1.4.6",
-    "readline-sync": "^1.4.10"
+    "readline-sync": "^1.4.10",
+    "ts": "^0.2.2"
   }
 }

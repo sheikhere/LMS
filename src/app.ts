@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import * as readlineSync from 'readline-sync';
 
 class Course {
@@ -51,7 +53,7 @@ function enrollStudent(studentId: number, courseId: number) {
   }
 }
 
-function main() {
+function mainn() {
   console.log("Welcome to the Learning Management System");
 
   while (true) {
@@ -94,5 +96,5 @@ function main() {
     }
   }
 }
-
-main();
+export default mainn ;
+mainn();
